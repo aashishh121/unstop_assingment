@@ -13,7 +13,7 @@ function App() {
 
   // this function is used to fetch the data of available seats from mongodb database.
   const getSeats = async () => {
-    let result = await fetch("http://localhost:8000/seats");
+    let result = await fetch("https://booking-app-ghz6.onrender.com/seats");
     result = await result.json();
     setSeats(result);
   }
