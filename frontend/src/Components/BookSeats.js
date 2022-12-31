@@ -72,7 +72,7 @@ function BookSeats(props, getSeats) {
 
         let len = props.valuee[0].reservedSeats.length;
 
-        let result = await fetch(`http://localhost:8000/reserve/${id}`, {
+        let result = await fetch(`https://booking-app-ghz6.onrender.com/reserve/${id}`, {
             method: "PUT",
             body: JSON.stringify({ start: len, reserve: seats }),
             headers: {
