@@ -104,6 +104,11 @@ function BookSeats(props, getSeats) {
                 {props.valuee.map((seat) => {
                     return (
                         <>
+                        
+                            <div>
+                                 <h5> Red - Available Seats</h5>
+                                 <h5> Green - Booekd Seats</h5>
+                             </div>
                             <div className='seat_section'>
                                 {
                                     seat.seatsAvailable.map((data) => {
