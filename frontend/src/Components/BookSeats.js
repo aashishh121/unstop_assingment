@@ -71,8 +71,11 @@ function BookSeats(props, getSeats) {
         }
 
         let len = props.valuee[0].reservedSeats.length;
-        if(len == 80){
-            alert("Sorry for Inconvienience,Coach is full");
+        
+        let availableSeats = 80 - len ;
+        
+        if(seats > availableSeats){
+            alert(`${availableSeats} seats are available`);
             return;
         }
 
