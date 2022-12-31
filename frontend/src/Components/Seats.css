@@ -45,3 +45,10 @@ input{
 .reservedSeat{
     background-color: green;
 }
+
+
+@media screen and (max-width: 350px) {
+    .container {
+      width: 100%; 
+    }
+  }
