@@ -71,6 +71,10 @@ function BookSeats(props, getSeats) {
         }
 
         let len = props.valuee[0].reservedSeats.length;
+        if(len == 80){
+            alert("Sorry for Inconvienience,Coach is full");
+            return;
+        }
 
         let result = await fetch(`https://booking-app-ghz6.onrender.com/reserve/${id}`, {
             method: "PUT",
