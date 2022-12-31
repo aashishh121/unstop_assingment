@@ -90,6 +90,7 @@ function BookSeats(props, getSeats) {
         result = await result.json();
 
         if (result) {
+            alert(`${seats} Booked`);
             props.getSeats();
         }
 
