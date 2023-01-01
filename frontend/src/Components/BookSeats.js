@@ -107,7 +107,7 @@ function BookSeats(props, getSeats) {
                         
                             <div>
                                  <h5> Red - Available Seats</h5>
-                                 <h5> Green - Booekd Seats</h5>
+                                 <h5> Green - Booked Seats</h5>
                              </div>
                             <div className='seat_section'>
                                 {
